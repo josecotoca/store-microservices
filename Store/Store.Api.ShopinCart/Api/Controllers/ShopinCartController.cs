@@ -34,7 +34,7 @@ namespace Store.Api.ShopinCart.Api.Controllers
             return await Mediator.Send(new QueryGetSale.SaleGetResponse { Id = id });
         }
 
-        [HttpGet("deliver/{id}")]
+        [HttpPost("deliver/{id}")]
         public async Task<ActionResult<Unit>> SaleDelivery(int id)
         {
             return await Mediator.Send(new CommandDeliverSale.RequestDeliverSale { Id = id });
