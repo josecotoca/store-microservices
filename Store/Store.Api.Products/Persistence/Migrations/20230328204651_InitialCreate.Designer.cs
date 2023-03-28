@@ -12,7 +12,7 @@ using Store.Api.Products.Persistence;
 namespace Store.Api.Products.Persistence.Migrations
 {
     [DbContext(typeof(ContextProduct))]
-    [Migration("20230328052423_InitialCreate")]
+    [Migration("20230328204651_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
